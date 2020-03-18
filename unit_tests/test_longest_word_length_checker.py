@@ -4,6 +4,13 @@ import unittest
 
 class test_wordlength(unittest.TestCase):
 
+    def test_can_return_longest_word_and_length(self):
+        length_checker = wl.Longest_Word_Length_Checker()
+        sentence = "I am a long sentence"
+        expected_length = [8, 'sentence']
+        actual_longest_length = length_checker.longest_word_checker(sentence)
+        self.assertEqual(expected_length, actual_longest_length)
+
     def test_can_return_longest_length(self):
         length_checker = wl.Longest_Word_Length_Checker()
         sentence = "I am a long sentence"
