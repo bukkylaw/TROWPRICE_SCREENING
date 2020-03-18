@@ -39,5 +39,13 @@ class test_wordlength(unittest.TestCase):
         actual_longest_word = length_checker.longest_word_checker(sentence)[1]
         self.assertEqual(expected_word, actual_longest_word)
 
+    def test_can_return_longest_length_of_a_zero_length_sentence(self):
+        length_checker = wl.Longest_Word_Length_Checker()
+        sentence = ""
+        expected_length = 0
+        actual_longest_length = length_checker.longest_word_checker(sentence)[0]
+        self.assertEqual(expected_length, actual_longest_length)
+
+
 
 
