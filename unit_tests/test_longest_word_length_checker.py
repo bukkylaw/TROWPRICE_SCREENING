@@ -17,3 +17,10 @@ class test_wordlength(unittest.TestCase):
         expected_word = 'sentence'
         actual_longest_word = length_checker.longest_word_checker(sentence)[1]
         self.assertEqual(expected_word, actual_longest_word)
+
+    def test_can_return_blank_sentence(self):
+        length_checker = wl.Longest_Word_Length_Checker()
+        sentence = ""
+        expected_word = ''
+        actual_longest_word = length_checker.longest_word_checker(sentence)[1]
+        self.assertEqual(expected_word, actual_longest_word)
