@@ -53,6 +53,3 @@ class test_wordlength(unittest.TestCase):
         actual_longest_length = length_checker.longest_word_checker(sentence)[0]
         self.assertEqual(expected_length, actual_longest_length)
 
-
-
-
